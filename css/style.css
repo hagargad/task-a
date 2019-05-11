@@ -1,0 +1,73 @@
+form.namesForm {
+    margin: 30px 0px 0px 0px;
+}
+
+div.control-group label.control-label i {
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
+}
+
+.tickBoard {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.tickBoard div {
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #222;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    margin: 0px 0px -6px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+div.tickBoard div i {
+    font-size: 50px;
+    position: absolute;
+    top: 24%;
+    left: 30%;
+}
+
+.tickBoard div.taken {
+    cursor: not-allowed;
+}
+
+div.board1,
+div.board4,
+div.board7 {
+    border-left: 0px solid #fff;
+}
+
+div.board7,
+div.board8,
+div.board9 {
+    border-bottom: 0px solid #fff;
+}
+
+.boardContain {
+    margin: 22px 0px 0px 0px;
+}
+
+.currentPlayer {
+    font-weight: bold;
+}
+
+.currentTurnContain {
+    text-align: center;
+}
+
+.namesContain {
+    margin: -24px 0px 0px 8px;
+}
+
+.namesContain .label {
+    font-size: 17px;
+    padding: 4px 8px;
+    margin: 0px 0px 4px -8px;
+}
+
+p.instructions .btn {
+    margin: 0px 10px 0px 0px;
+}

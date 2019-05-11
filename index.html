@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Tic-Tac-Toe | Task - a</title>
+
+    <link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/alert.css">
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <div class="well">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="instructions">Enter player's names</p>
+
+        <form class="form-horizontal namesForm">
+            <div class="control-group">
+                <label class="control-label" for="xesPlayerName">
+            Player X Name
+            <i class="icon-remove"></i>
+          </label>
+                <div class="controls">
+                    <input type="text" id="xesPlayerName" placeholder="player X name" autocomplete="off">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="osPlayerName">
+            Player O  Name
+            <i class="icon-circle-blank"></i>
+          </label>
+                <div class="controls">
+                    <input type="text" id="osPlayerName" placeholder="player O name" autocomplete="off">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button class="btn btn-success setPlayerNamesBtn">Begin The Game</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="well boardContain hide">
+
+            <div class="currentTurnContain">
+                <span class="currentTurnIcon"></span>
+                <span class="currentPlayer"></span>, it is your turn to play
+            </div>
+
+            <div class="namesContain">
+                <div class="nameOneContain">
+                    <i class="icon-remove"></i>
+                    <span class="nameOne"></span>
+                </div>
+                <div class="nameTwoContain">
+                    <i class="icon-circle-blank"></i>
+                    <span class="nameTwo"></span>
+                </div>
+
+            </div>
+            <div class="tickBoard">
+                <div id="1" class="board1"></div>
+                <div id="2" class="board2"></div>
+                <div id="3" class="board3"></div>
+                <br/>
+                <div id="4" class="board4"></div>
+                <div id="5" class="board5"></div>
+                <div id="6" class="board6"></div>
+                <br/>
+                <div id="7" class="board7"></div>
+                <div id="8" class="board8"></div>
+                <div id="9" class="board9"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal To-Do replace with with sweetAlert -->
+    <div class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="modalHeader"></h3>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
